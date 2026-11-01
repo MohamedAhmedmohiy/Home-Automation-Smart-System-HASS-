@@ -1,0 +1,51 @@
+/* =========================================================
+   faq.css – FAQ page only. Not part of the PDF design, so it
+   re-uses the Home page look (header, footer, colors, type).
+   ========================================================= */
+:root{--ink:#1b1b22;--muted:#6b6b76;--line:#e8e8ee;--orange:#f05a28;--green:#16a34a;--green-dark:#15803d;--bg:#fbfbfe;--band:#f4f4f8;--soft:#f1f1f6}
+body{font-family:var(--font-sans);color:var(--ink);background:var(--bg)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);flex:none}
+/* ---------- header ---------- */
+/* ---------- hero ---------- */
+.faq-hero{padding:56px 0 34px}
+.status-pill{display:inline-flex;align-items:center;gap:8px;font:500 10.5px var(--font-mono);letter-spacing:.1em;text-transform:uppercase;background:#f1f1f5;border:1px solid #e6e6ec;border-radius:999px;padding:7px 14px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.faq-hero h1{font:800 38px/1.2 var(--font-sans);letter-spacing:-.02em;margin:22px 0 14px}
+.faq-hero h1 span{color:var(--orange);font-weight:800}
+.lead{font-size:17px;line-height:1.55;color:var(--muted);max-width:560px}
+.faq-search{display:flex;align-items:center;gap:10px;max-width:520px;margin-top:26px;height:48px;padding:0 16px;border-radius:12px;background:#fff;border:1px solid var(--line);box-shadow:0 1px 2px rgba(0,0,0,.04);color:#8a8a94}
+.faq-search input{flex:1;min-width:0;border:0;outline:0;background:transparent;font-size:14.5px;color:var(--ink)}
+.faq-search:focus-within{border-color:#f3b496;box-shadow:0 0 0 3px rgba(240,90,40,.12)}
+/* ---------- list ---------- */
+.faq-body{padding:10px 0 40px}
+.faq-wrap{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:32px;align-items:start}
+.faq-list{display:grid;gap:12px}
+.faq-item{background:#fff;border:1px solid #ececf2;border-radius:16px;box-shadow:0 2px 6px rgba(20,20,40,.04);overflow:hidden}
+.faq-item[hidden]{display:none}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 22px;border:0;background:none;font:600 15.5px var(--font-sans);text-align:left;color:var(--ink)}
+.faq-q .ic{font-size:18px;color:var(--orange);transition:transform .2s}
+.faq-item.open .faq-q .ic{transform:rotate(180deg)}
+.faq-item.open{border-color:#f3b496}
+.faq-a{display:none;padding:0 22px 20px;font-size:14.5px;line-height:1.65;color:var(--muted)}
+.faq-item.open .faq-a{display:block}
+.faq-a a{color:var(--orange);text-decoration:underline}
+.faq-empty{padding:18px 4px;color:var(--muted);font-size:14.5px}
+.faq-empty a{color:var(--orange);text-decoration:underline}
+/* ---------- side ---------- */
+.faq-side{display:grid;gap:16px;position:sticky;top:90px}
+.side-card{background:#fff;border:1px solid #ececf2;border-radius:20px;padding:24px;box-shadow:0 2px 6px rgba(20,20,40,.04)}
+.side-card h3{font:700 19px/1.3 var(--font-sans)}
+.side-card p{font-size:14px;line-height:1.55;color:var(--muted);margin:8px 0 18px}
+.side-card h4{font:600 11px var(--font-mono);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.side-card>a:not(.btn-primary){display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-top:1px solid var(--line);font-size:14px;color:#44444d}
+.side-card>a:not(.btn-primary):hover{color:var(--orange)}
+.btn-primary{display:inline-flex;align-items:center;justify-content:center;background:var(--orange);color:#fff;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:13px 20px;border-radius:12px;box-shadow:0 8px 18px rgba(240,90,40,.28)}
+.btn-primary:hover{background:#dc4c1c}
+/* ---------- footer ---------- */
+/* ---------- responsive ---------- */
+@media(max-width:1000px){
+.faq-wrap{grid-template-columns:1fr}
+.faq-side{position:static}
+}
+@media(max-width:760px){
+.faq-hero h1{font-size:30px}
+}

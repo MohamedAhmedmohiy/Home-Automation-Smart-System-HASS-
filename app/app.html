@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App Manual | HASS Smart Home IoT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../common/common.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="site-header"><div class="container">
+  <a class="brand" href="../index.html">
+    <div class="img-slot logo-image" data-label="LOGO">
+      <img src="../common/img/HASS-project-LOGO.png" alt="HASS-project-LOGO">
+    </div>
+    <span>HASS<small>SMART HOME IOT</small></span>
+  </a>
+  <nav class="main-nav" id="nav"><a href="../index.html">Home</a><a href="../about/about.html">About</a><a href="../app/app.html" class="active">App</a><a href="../faq/faq.html">FAQ</a><a href="../contact/contact.html">Contact</a><a href="../shop/shop.html">Shop</a><a href="../documentation/documentation.html">Documentation</a></nav>
+  <div class="header-actions">
+    <span class="pill ok">Local Network: Connected</span>
+    <a class="btn accent btn-sm" href="../shop/shop.html">Shop</a>
+    <a class="avatar-btn" href="../contact/contact.html" aria-label="Account">&#9786;</a>
+  </div>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false">&#9776;</button>
+</div></header>
+<main>
+
+<section><div class="container">
+  <span class="pill">Official Companion App &bull; v2.2 Guide</span>
+  <h1 class="inline-1">HASS Mobile Companion.<br><span class="inline-2">Complete Interface User Manual.</span></h1>
+  <p class="lead">Master every screen, workflow, and hardware-integration feature in the native HASS mobile application.</p>
+  <div class="inline-3"><a class="btn dark-red" href="#">Download Mobile Application</a><a class="btn ghost" href="#ch1">Explore the Mobile Manual</a></div>
+</div></section>
+<div class="container mascot-row mascot-row--tight">
+    <aside class="mascot-guide" aria-label="Tip from HASS Bot">
+      <img class="mascot-guide__img" src="../common/img/mascot/hass-bot-wave.png" alt="HASS Bot waving" width="150" height="150">
+      <div class="mascot-guide__bubble">
+        <span class="mascot-guide__tag">HASS BOT</span>
+        <p>Hi! I&rsquo;ll walk you through the app, chapter by chapter, from signing in to automation.</p>
+        <a class="mascot-guide__link" href="#ch1">Start with Chapter 1 <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+        <a class="mascot-guide__link" href="../documentation/documentation.html#mobile-application">Same screens in the book <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </aside>
+</div>
+<div class="container" id="ch1">
+<div class="chapter">
+  <div class="chapter__text"><span class="eyebrow">Chapter 01</span><h2 class="inline-4">Authentication &amp; Account Provisioning</h2><p class="lead inline-5">Create a local authenticated profile or sign in to your encrypted controller instance.</p><div class="card"><h4>Initial Profile Registration</h4>Tap Create one to access the registration screen.</div><div class="card"><h4>Encrypted Quick Login</h4>Subsequent logins require only your administrator credentials.</div></div>
+  <div class="chapter__shots"><figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: login">
+  <img src="img/Login.png" alt="Login">
+</div>
+</div><figcaption>Figure 1.1: Login</figcaption></figure><figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: register">
+  <img src="img/Register account.png" alt="Register account">
+</div>
+</div><figcaption>Figure 1.2: Register Account</figcaption></figure></div>
+</div>
+<div class="chapter">
+  <div class="chapter__text"><span class="eyebrow">Chapter 02</span><h2 class="inline-4">Home Dashboard &amp; Real-Time Telemetry</h2><p class="lead inline-5">The central command cockpit displaying active load states and onboard DHT22 readings.</p><div class="card"><h4>Microclimate &amp; Device State Cards</h4>Active devices and ambient temperature at a glance.</div><div class="card"><h4>Master Quick Controls &amp; Slot Cards</h4>Toggle all connected terminals using master buttons.</div></div>
+  <div class="chapter__shots"><figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: dashboard active">
+  <img src="img/Active Dashboard.png" alt="Active Dashboard">
+</div>
+</div><figcaption>Figure 2.1: Active Dashboard</figcaption></figure><figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: dashboard no devices">
+  <img src="img/Slot Allocatin Banner.png" alt="Slot Allocatin Banner">
+</div>
+</div><figcaption>Figure 2.2: No Devices Registered</figcaption></figure></div>
+</div>
+<aside class="mascot-guide mascot-guide--flip" aria-label="Tip from HASS Bot">
+      <img class="mascot-guide__img" src="../common/img/mascot/hass-bot-laptop.png" alt="HASS Bot with a laptop" width="150" height="150">
+      <div class="mascot-guide__bubble">
+        <span class="mascot-guide__tag">HASS BOT</span>
+        <p>Pairing is quick: add a device, give it a name, pick a category and assign it to a hardware slot.</p>
+        <a class="mascot-guide__link" href="../documentation/documentation.html#hardware-components">Hardware behind the slots <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </aside>
+<div class="chapter">
+  <div class="chapter__text"><span class="eyebrow">Chapter 03</span><h2 class="inline-4">Hardware Slot Pairing &amp; Device Setup</h2><p class="lead inline-5">Configure any of 4 independent physical relay outputs (Slots 1 through 4).</p><div class="card"><h4>The 4-Channel Terminal Mapping</h4>Slots map to terminals 32, 33, 25 and 26. Choose icon, category, and label for each device.</div></div>
+  <div class="chapter__shots"><figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: add device">
+  <img src="img/Slot 1(Light setup).png" alt="Slot 1(Light setup)">
+</div>
+</div><figcaption>Figure 3.1: Add a Device</figcaption></figure><figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: slot selection">
+  <img src="img/Slot 3 Selection Grid.png" alt="Slot 3 Selection Grid">
+</div>
+</div><figcaption>Figure 3.2: Slot 2 Selected</figcaption></figure></div>
+</div>
+<div class="chapter">
+  <div class="chapter__text"><span class="eyebrow">Chapter 04</span><h2 class="inline-4">Device Management &amp; Status Inspection</h2><p class="lead inline-5">Detailed channel inspections, live wattage metering and one-tap master control.</p><div class="card"><h4>Inspection Breakdown</h4>Terminal bits, relay state and power metering shown per channel.</div></div>
+  <div class="chapter__shots"><figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: device details">
+  <img src="img/Slot 1 Details.png" alt="Slot 1 Details">
+</div>
+</div><figcaption>Figure 4.1: Device Details</figcaption></figure><figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: active device">
+  <img src="img/Active 'on' state.png" alt="Active 'on' state">
+</div>
+</div><figcaption>Figure 4.2: Active Device</figcaption></figure><figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: delete device">
+  <img src="img/Safe Unpaiting.png" alt="Safe Unpaiting">
+</div>
+</div><figcaption>Figure 4.3: Soft Deleting</figcaption></figure></div>
+</div>
+<div class="chapter inline-6">
+  <div><span class="eyebrow">Chapter 05</span><h2 class="inline-4">Advanced Local Automation Suite</h2><p class="lead inline-7">HASS delivers three distinct local automation mechanisms.</p></div>
+  <div class="shot-row-4">
+    <figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: control hub menu">
+  <img src="img/Control Hub Menu.png" alt="Control Hub Menu">
+</div>
+</div><figcaption>Control Hub Menu</figcaption></figure>
+    <figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: If-Then climate logic">
+  <img src="img/IF - then Climate Logic.png" alt="IF - then Climate Logic">
+</div>
+</div><figcaption>If-Then Climate Logic</figcaption></figure>
+    <figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: weekly schedules">
+  <img src="img/Weekly Schedules.png" alt="Weekly Schedules">
+</div>
+</div><figcaption>Weekly Schedules</figcaption></figure>
+    <figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: countdown timers">
+  <img src="img/Countdown Timers.png" alt="Countdown Timers">
+</div>
+</div><figcaption>Countdown Timers</figcaption></figure>
+  </div>
+  <div class="card"><h4>Autonomous Local Processing Engine</h4>Unlike cloud-dependent apps, rules execute on the ESP32 itself, 24 hours a day, 365 days a year.</div>
+</div>
+<aside class="mascot-guide" aria-label="Tip from HASS Bot">
+      <img class="mascot-guide__img" src="../common/img/mascot/hass-bot-idea.png" alt="HASS Bot with an idea" width="150" height="150">
+      <div class="mascot-guide__bubble">
+        <span class="mascot-guide__tag">HASS BOT</span>
+        <p>Tip: the Schedule, Timer and If-Then tools run on the controller itself, so they keep working even when your phone is away.</p>
+        <a class="mascot-guide__link" href="../documentation/documentation.html#automation-functions">Automation details <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </aside>
+<div class="chapter">
+  <div class="chapter__text"><span class="eyebrow">Chapter 06</span><h2 class="inline-4">App Navigation, Settings &amp; Personalization</h2><p class="lead inline-5">Explore the unified navigation drawer, multilingual support and system theme preferences.</p><div class="card"><h4>Quick Access Navigation</h4>Tap the hamburger menu in the top-left to expand the slide-out drawer.</div><div class="card"><h4>Board Pairing &amp; System Preferences</h4>Link the controller, switch language (English / Arabic) and theme.</div></div>
+  <div class="chapter__shots"><figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: navigation drawer">
+  <img src="img/Side Navigation Drawer.png" alt="Side Navigation Drawer">
+</div>
+</div><figcaption>Figure 6.1: Navigation Drawer</figcaption></figure><figure class="shot"><div class="phone-frame">
+  <div class="img-slot app-screenshot  " data-label="App screenshot: board pairing settings">
+  <img src="img/Board Pairing & Settings.png" alt="Board Pairing & Settings">
+</div>
+</div><figcaption>Figure 6.2: Board Pairing &amp; Settings</figcaption></figure></div>
+</div>
+</div>
+
+</main>
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="../index.html">
+        <div class="img-slot logo-image" data-label="LOGO">
+          <img src="../common/img/HASS-project-LOGO.png" alt="HASS-project-LOGO">
+        </div>
+        <span>HASS Core</span>
+      </a>
+      <p>Precision-engineered physical computing, local-first automation, and tactile environmental telemetry for architectural spaces.</p>
+      <span class="pill ok">Operational: Mesh Node Alpha 01</span>
+    </div>
+    <div><h4>System</h4><ul><li><a href="../shop/shop.html#product">Controller</a></li><li><a href="../shop/shop.html#inside-box">Relays &amp; Actuators</a></li><li><a href="../shop/shop.html#inside-box">Sensors &amp; Environmental</a></li><li><a href="../app/app.html">HASS OS App</a></li></ul></div>
+    <div><h4>Resources</h4><ul><li><a href="../documentation/documentation.html">Documentation</a></li><li><a href="../documentation/documentation.html#chapter-6-software-design-and-implementation">Firmware Binaries</a></li><li><a href="../documentation/documentation.html#cloud-database-and-data-model">REST &amp; WebSocket API</a></li><li><a href="../documentation/documentation.html#pin-assignment-and-wiring">Hardware Schematics</a></li></ul></div>
+    <div><h4>Company &amp; Legal</h4><ul><li><a href="../about/about.html#recognition">About RoboDam</a></li><li><a href="../about/about.html#privacy">Local-First Guarantee</a></li><li><a href="../documentation/documentation.html#chapter-7-security-and-authentication">Open Standards &amp; Privacy</a></li><li><a href="../contact/contact.html">Contact Engineering</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 HASS RoboDam Systems Inc. All physical rights reserved.</span><span class="mono"><a href="../about/about.html#privacy">Privacy Spec</a> &nbsp; <a href="../about/about.html#privacy">Zero-Cloud Protocol</a> &nbsp; <a href="../documentation/documentation.html">Compliance EN 50491</a></span></div>
+</div></footer>
+<script src="../common/common.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

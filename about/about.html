@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HASS | About</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../common/common.css">
+<link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<header class="site-header"><div class="container">
+  <a class="brand" href="../index.html">
+    <div class="img-slot logo-image" data-label="LOGO">
+      <img src="../common/img/HASS-project-LOGO.png" alt="HASS-project-LOGO">
+    </div>
+    <span>HASS<small>SMART HOME IOT</small></span>
+  </a>
+  <nav class="main-nav" id="nav"><a href="../index.html">Home</a><a href="../about/about.html" class="active">About</a><a href="../app/app.html">App</a><a href="../faq/faq.html">FAQ</a><a href="../contact/contact.html">Contact</a><a href="../shop/shop.html">Shop</a><a href="../documentation/documentation.html">Documentation</a></nav>
+  <div class="header-actions">
+    <span class="pill ok">Local Network: Connected</span>
+    <a class="btn accent btn-sm" href="../shop/shop.html">Shop</a>
+    <a class="avatar-btn" href="../contact/contact.html" aria-label="Account">&#9786;</a>
+  </div>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false">&#9776;</button>
+</div></header>
+
+<main>
+  <!-- INTRO -->
+  <section class="intro container">
+    <span class="outline-pill">Intelligent Energy Architecture</span>
+    <p class="intro-line">Engineering Household Energy Conservation with <u>Intelligent Behavior AI</u></p>
+    <p class="intro-text">HASS fundamentally transforms residential power management by merging deterministic solid-state hardware with local behavioral intelligence&mdash;slashing power consumption without compromising daily comfort.</p>
+  </section>
+
+  <div class="container mascot-row">
+    <aside class="mascot-guide" aria-label="Tip from HASS Bot">
+      <img class="mascot-guide__img" src="../common/img/mascot/hass-bot-books.png" alt="HASS Bot carrying books" width="150" height="150">
+      <div class="mascot-guide__bubble">
+        <span class="mascot-guide__tag">HASS BOT</span>
+        <p>Behind every HASS unit there&rsquo;s a lot of studying, building and debugging. Meet the people who made me!</p>
+        <a class="mascot-guide__link" href="#team">Meet the team <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+        <a class="mascot-guide__link" href="../documentation/documentation.html#front">Team photos in the book <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- THREE PILLARS -->
+  <section class="container">
+    <div class="three-grid">
+      <article class="feature-card">
+        <span class="ficon"><svg class="ic"><use href="#i-zap"/></svg></span>
+        <h3>Active Energy Conservation</h3>
+        <p>Eliminate phantom draws and uncalibrated standby loads through continuous sub-circuit sensing and deterministic hardware load control, directly reducing electrical utility waste.</p>
+        <div class="feature-foot">
+          <span class="outline-pill sm"><svg class="ic"><use href="#i-trend-down"/></svg>Up to 34% Average Reduction</span>
+          <span class="foot-note">Standby Kill: &lt;0.1W</span>
+        </div>
+      </article>
+      <article class="feature-card">
+        <span class="ficon shadow"><svg class="ic"><use href="#i-brain"/></svg></span>
+        <h3>Embedded Behavior AI</h3>
+        <p>An on-chip neural engine analyzes household usage patterns over time, dynamically formulating personalized, non-intrusive optimization routines that retain ambient comfort.</p>
+        <div class="feature-foot">
+          <span class="outline-pill sm"><svg class="ic"><use href="#i-sliders"/></svg>Autonomous Dynamic Models</span>
+          <b class="foot-note">Local Edge ML</b>
+        </div>
+      </article>
+      <article class="feature-card">
+        <span class="ficon"><svg class="ic"><use href="#i-lock-dot"/></svg></span>
+        <h3>100% Local Privacy &amp; Security</h3>
+        <p>Comprehensive device monitoring runs air-gapped on your local network. Zero cloud leakage, no external surveillance, and end-to-end local hardware encryption.</p>
+        <div class="feature-foot">
+          <span class="outline-pill sm"><svg class="ic"><use href="#i-shield"/></svg>Zero Outbound Pings</span>
+          <span class="foot-note">TLS 1.3 Air-Gapped</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TELEMETRY BENCHMARK -->
+  <section class="container">
+    <div class="panel">
+      <span class="outline-pill sm bold">Telemetry Benchmark</span>
+      <div class="bench-head">
+        <div>
+          <p class="bench-title">Household Power Reduction: Conventional vs. HASS AI Optimization</p>
+          <p class="bench-sub">Empirical 24-hour diurnal profile comparing legacy unmonitored baseline power draw against autonomous HASS edge heuristic load shedding.</p>
+        </div>
+        <div class="legend">
+          <span class="legend-chip"><i class="sq"></i>Baseline (Unmanaged)</span>
+          <span class="legend-chip bold">HASS AI Optimized (-34%)</span>
+        </div>
+      </div>
+      <hr>
+      <div class="bench-grid">
+        <div class="chart">
+          <div class="chart-top"><span>PEAK LOAD (kW) OVER 24-HOUR CYCLE</span><b><svg class="ic"><use href="#i-zap"/></svg>SAVINGS: -1.4 kW PEAK / -34% kWh</b></div>
+          <svg class="chart-svg" viewBox="0 0 700 230" preserveAspectRatio="none" aria-label="Peak load over 24 hours">
+            <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0643a" stop-opacity=".55"/><stop offset="1" stop-color="#f0643a" stop-opacity="0"/></linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9c8580" stop-opacity=".22"/><stop offset="1" stop-color="#9c8580" stop-opacity="0"/></linearGradient></defs>
+            <line x1="0" y1="52" x2="700" y2="52" stroke="#e5e0de" stroke-dasharray="4 4"/>
+            <line x1="0" y1="106" x2="700" y2="106" stroke="#e5e0de" stroke-dasharray="4 4"/>
+            <line x1="0" y1="160" x2="700" y2="160" stroke="#e5e0de" stroke-dasharray="4 4"/>
+            <path d="M0 140 C60 152 120 152 180 130 C250 80 300 52 355 52 C430 52 480 100 540 118 C600 132 650 126 700 112 V226 H0Z" fill="url(#g2)"/>
+            <path d="M0 140 C60 152 120 152 180 130 C250 80 300 52 355 52 C430 52 480 100 540 118 C600 132 650 126 700 112" fill="none" stroke="#8d746e" stroke-width="2" stroke-dasharray="3 4"/>
+            <path d="M0 188 C60 194 120 194 180 176 C250 140 300 100 355 98 C430 98 480 140 540 158 C600 172 650 176 700 170 V226 H0Z" fill="url(#g1)"/>
+            <path d="M0 188 C60 194 120 194 180 176 C250 140 300 100 355 98 C430 98 480 140 540 158 C600 172 650 176 700 170" fill="none" stroke="#f0541f" stroke-width="3"/>
+            <circle cx="355" cy="52" r="5" fill="#8d746e"/><circle cx="355" cy="98" r="5" fill="#fff" stroke="#f0541f" stroke-width="2"/>
+          </svg>
+          <div class="axis"><span>00:00 (Night Standby)</span><span>06:00 (Morning Spike)</span><span>12:00 (Mid-day)</span><span>18:00 (Peak Tariff Window)</span><span>23:59</span></div>
+        </div>
+        <div class="stats">
+          <div class="stat big">
+            <div class="stat-top"><span>DAILY CONSERVED POWER</span><small>-34%</small></div>
+            <p class="stat-value"><b>14.8</b> kWh / day saved</p>
+            <p class="stat-note">Zero-crossing triac cutoff eliminates 92% of phantom standby wattage on idle sub-circuits.</p>
+          </div>
+          <div class="stat-pair">
+            <div class="stat"><span>BASELINE PEAK</span><b>4.2 kW</b><small>Unmonitored draw</small></div>
+            <div class="stat"><span class="bold">HASS OPTIMIZED</span><b>2.8 kW</b><small>Peak load shaved</small></div>
+          </div>
+          <div class="stat payback"><span>Calculated Payback Period:</span><b><svg class="ic"><use href="#i-check-circle"/></svg>5.8 Months</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECISION AUTOMATION ENGINE -->
+  <section class="container">
+    <div class="panel">
+      <h2 class="caps">Precision Automation Engine</h2>
+      <p class="pillars-title">Four Deterministic Control Pillars</p>
+      <p class="pillars-sub">From microsecond manual triggers to adaptive environmental rules, every electrical channel is governed by transparent, dependable logic.</p>
+      <div class="pillars">
+        <article class="pillar">
+          <div class="pillar-top"><span class="num">01</span><svg class="ic"><use href="#i-calendar"/></svg></div>
+          <h3>Schedule</h3>
+          <p>Precision recurring daily and weekly routines for household devices and heavy HVAC circuits synchronized to off-peak tariff windows.</p>
+          <div class="pillar-foot">RTC Synchronized Clock</div>
+        </article>
+        <article class="pillar">
+          <div class="pillar-top"><span class="num">02</span><svg class="ic"><use href="#i-refresh"/></svg></div>
+          <h3>Automation</h3>
+          <p>Autonomous routines and active background energy optimization powered by real-time presence detection and system state machine graphs.</p>
+          <div class="pillar-foot">Continuous Local Loop</div>
+        </article>
+        <article class="pillar">
+          <div class="pillar-top"><span class="num">03</span><svg class="ic"><use href="#i-toggle"/></svg></div>
+          <h3>On-Off</h3>
+          <p>Instantaneous, zero-latency manual and master toggle control across all hardware channels via mechanical switches or the local web console.</p>
+          <div class="pillar-foot">&lt; 2ms Triac Switching</div>
+        </article>
+        <article class="pillar short">
+          <div class="pillar-top"><span class="num">04</span><svg class="ic"><use href="#i-split"/></svg></div>
+          <h3>If-Then Condition</h3>
+          <p>Climate and environmental reactive logic triggered by onboard multi-sensor inputs (e.g., DHT22 temperature and humidity thresholds).</p>
+          <div class="pillar-foot">DHT22 / Current Logic</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section-line" id="team">
+    <div class="container">
+      <div class="sec-head">
+        <div><h2 class="caps">System Creators &amp; Architects</h2><p class="sec-title">The Engineering Team Behind HASS</p></div>
+        <p class="sec-desc">The multidisciplinary engineers who designed, prototyped, and programmed the Home Automation Smart System.</p>
+      </div>
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="team-media">
+            <span class="lead-badge">LEAD 01</span>
+            <div class="img-slot team-photo" data-label="Team member 1 photo">
+              <img src="img/fadi.jpeg" alt="LEED1">
+            </div>
+          </div>
+          <div class="team-body">
+            <h3>Fadi Sobhy</h3><p>Embedded Systems &amp; project lead</p>
+            <div class="resp"><span>PROJECT RESPONSIBILITY:</span>
+              <ul>
+                <li>Developed the mobile application using Flutter.</li>
+                <li>Implemented the real-time database using Firebase.</li>
+                <li>Integrated hardware components with the software system.</li>
+                <li>Developed the ESP32 firmware.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-media">
+            <span class="lead-badge">LEAD 02</span>
+            <div class="img-slot team-photo" data-label="Team member 2 photo">
+              <img src="img/Rawan.jpeg" alt="LEED2">
+            </div>
+          </div>
+          <div class="team-body">
+            <h3>Rawan Elsharawy</h3><p>Architecture Designer</p>
+            <div class="resp"><span>PROJECT RESPONSIBILITY:</span>
+              <ul>
+                <li>Made DOC</li>
+                <li>Made connection Diagram</li>
+                <li>Made Electronic diagram</li>
+                <li>Help in connection devices</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-media">
+            <span class="lead-badge">LEAD 03</span>
+            <div class="img-slot team-photo" data-label="Team member 3 photo">
+              <img src="img/mohamed.jpg" alt="LEED3">
+            </div>
+          </div>
+          <div class="team-body">
+            <h3>Mohamed Ahmed</h3><p>Front-End Development & Web Design</p>
+            <div class="resp"><span>PROJECT RESPONSIBILITY:</span>
+              <ul>
+                <li>Developed the HASS project website using HTML, CSS, and JavaScript.</li>
+                <li>Designed the circuit diagram for the project.</li>
+                <li>Prepared the project's technical documentation.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-media">
+            <span class="lead-badge">LEAD 04</span>
+            <div class="img-slot team-photo" data-label="Team member 4 photo">
+              <img src="img/Julia.jpg" alt="LEED4">
+            </div>
+          </div>
+          <div class="team-body">
+            <h3>Julia Essam</h3><p>UI/UX Designer</p>
+            <div class="resp"><span>PROJECT RESPONSIBILITY:</span>
+              <ul>
+                <li>Build UI/UX for mobile application</li>
+                <li>Build Ui/UX for Touch Screen in IOT project</li>
+                <li>Made Project Infographic</li>
+                <li>Help in presentation</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-media">
+            <span class="lead-badge">LEAD 05</span>
+            <div class="img-slot team-photo" data-label="Team member 5 photo">
+              <img src="img/Nour.jpeg" alt="LEED5">
+            </div>
+          </div>
+          <div class="team-body">
+            <h3>Noureldeen Elhamy</h3><p>Architecture Designer</p>
+            <div class="resp"><span>PROJECT RESPONSIBILITY:</span>
+              <ul>
+                <li>Made DOC</li>
+                <li>Make presentation video</li>
+                <li>Help make manual</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-media">
+            <span class="lead-badge">LEAD 06</span>
+            <div class="img-slot team-photo" data-label="Team member 6 photo">
+              <img src="img/Yousef.jpeg" alt="LEED6">
+            </div>
+          </div>
+          <div class="team-body">
+            <h3>Yousef Iskandar</h3><p>System Analyst</p>
+            <div class="resp"><span>PROJECT RESPONSIBILITY:</span>
+              <ul>
+                <li>Make project diagram (flow chart, sequence diagram, data flow .. etc)</li>
+                <li>Make  manual</li>
+                <li>Design logo</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-media">
+            <span class="lead-badge">LEAD 07</span>
+            <div class="img-slot team-photo" data-label="Team member 7 photo">
+              <img src="img/mario.jpg" alt="LEED7">
+            </div>
+          </div>
+          <div class="team-body">
+            <h3>Mario Anwer</h3><p>Ai engineer</p>
+            <div class="resp"><span>PROJECT RESPONSIBILITY:</span>
+              <ul>
+                <li>Made AI to evalute power consumption</li>
+                <li>Make AI Video</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mascot-row">
+    <aside class="mascot-guide mascot-guide--flip" aria-label="Tip from HASS Bot">
+      <img class="mascot-guide__img" src="../common/img/mascot/hass-bot-cheer.png" alt="HASS Bot cheering" width="150" height="150">
+      <div class="mascot-guide__bubble">
+        <span class="mascot-guide__tag">HASS BOT</span>
+        <p>Hooray! Here&rsquo;s where the project has been recognised.</p>
+        <a class="mascot-guide__link" href="#recognition">See competitions &amp; recognition <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+        <a class="mascot-guide__link" href="../documentation/documentation.html#chapter-8-testing-and-results">See the test results <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- COMPETITIONS -->
+  <section class="section-line" id="recognition">
+    <div class="container">
+      <div class="sec-head">
+        <div><h2 class="caps">Validated Excellence</h2><p class="sec-title">Competitions &amp; Recognition</p></div>
+        <p class="sec-desc">Showcasing HASS in national and international engineering and entrepreneurship competitions.</p>
+      </div>
+      <div class="award-grid">
+        <article class="award-card hot">
+          <span class="award-ic top"><svg class="ic"><use href="#i-star-circle"/></svg></span>
+          <div class="award-tag-row"><span class="outline-pill sm bold">ROBODAM 2026</span><svg class="ic"><use href="#i-medal"/></svg></div>
+          <h3>RoboDam Competition</h3>
+          <b class="award-sub">Grand Engineering Showcase Laurels</b>
+          <p>Awarded 1st Place / Grand Award in hardware engineering and autonomous local automation. Validated under live simulated grid shedding and harsh electrical load test benches.</p>
+          <div class="award-result"><span class="res-chip"><svg class="ic"><use href="#i-trophy"/></svg>1st Place &mdash; Autonomous Local Automation</span></div>
+          <div class="award-meta"><span>Bench: Real-Time Latency</span><b>&lt; 1.8ms</b></div>
+        </article>
+        <article class="award-card">
+          <div class="award-tag-row"><span class="outline-pill sm bold">INTELAKA</span><svg class="ic"><use href="#i-award"/></svg></div>
+          <h3>Intelaka Innovation &amp; Entrepreneurship</h3>
+          <b class="award-sub">Sustainable Tech &amp; Commercial Viability</b>
+          <p>Recognized for high-impact commercial viability in sustainable home energy efficiency and IoT tech. Praised by industry judges for eliminating cloud subscription barriers.</p>
+          <div class="award-result"><span class="res-chip"><svg class="ic"><use href="#i-award"/></svg>Top Venture Honoree &mdash; Green IoT</span></div>
+          <p class="award-track">Track: Energy Conservation &amp; Hardware Scalability</p>
+        </article>
+        <article class="award-card">
+          <div class="award-tag-row"><span class="outline-pill sm bold">FEDCOC</span><svg class="ic"><use href="#i-trophy"/></svg></div>
+          <h3>FEDCOC Technology &amp; Innovation</h3>
+          <b class="award-sub">Federation of Chambers of Commerce</b>
+          <p>Honored for pioneering local-first consumer electronics and smart energy hardware, establishing high engineering manufacturing benchmarks for domestic smart grid hardware.</p>
+          <div class="award-result"><span class="res-chip"><svg class="ic"><use href="#i-medal"/></svg>Innovation Distinction Award</span></div>
+          <p class="award-track">Focus: Sovereign Hardware &amp; Electrical Compliance</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY (anchor target for footer links) -->
+  <span id="privacy"></span>
+</main>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="../index.html">
+        <div class="img-slot logo-image" data-label="LOGO">
+          <img src="../common/img/HASS-project-LOGO.png" alt="HASS-project-LOGO">
+        </div>
+        <span>HASS Core</span>
+      </a>
+      <p>Precision-engineered physical computing, local-first automation, and tactile environmental telemetry for architectural spaces.</p>
+      <span class="pill ok">Operational: Mesh Node Alpha 01</span>
+    </div>
+    <div><h4>System</h4><ul><li><a href="../shop/shop.html#product">Controller</a></li><li><a href="../shop/shop.html#inside-box">Relays &amp; Actuators</a></li><li><a href="../shop/shop.html#inside-box">Sensors &amp; Environmental</a></li><li><a href="../app/app.html">HASS OS App</a></li></ul></div>
+    <div><h4>Resources</h4><ul><li><a href="../documentation/documentation.html">Documentation</a></li><li><a href="../documentation/documentation.html#chapter-6-software-design-and-implementation">Firmware Binaries</a></li><li><a href="../documentation/documentation.html#cloud-database-and-data-model">REST &amp; WebSocket API</a></li><li><a href="../documentation/documentation.html#pin-assignment-and-wiring">Hardware Schematics</a></li></ul></div>
+    <div><h4>Company &amp; Legal</h4><ul><li><a href="../about/about.html#recognition">About RoboDam</a></li><li><a href="../about/about.html#privacy">Local-First Guarantee</a></li><li><a href="../documentation/documentation.html#chapter-7-security-and-authentication">Open Standards &amp; Privacy</a></li><li><a href="../contact/contact.html">Contact Engineering</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 HASS RoboDam Systems Inc. All physical rights reserved.</span><span class="mono"><a href="../about/about.html#privacy">Privacy Spec</a> &nbsp; <a href="../about/about.html#privacy">Zero-Cloud Protocol</a> &nbsp; <a href="../documentation/documentation.html">Compliance EN 50491</a></span></div>
+</div></footer>
+
+<script src="../common/common.js"></script>
+<script src="about.js"></script>
+</body>
+</html>

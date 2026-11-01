@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HASS | Home Automation. Intelligent Energy Management.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="common/common.css">
+<link rel="stylesheet" href="home/home.css">
+</head>
+<body>
+
+<header class="site-header"><div class="container">
+  <a class="brand" href="index.html">
+    <div class="img-slot logo-image" data-label="LOGO">
+      <img src="common/img/HASS-project-LOGO.png" alt="HASS-project-LOGO">
+    </div>
+    <span>HASS<small>SMART HOME IOT</small></span>
+  </a>
+  <nav class="main-nav" id="nav"><a href="index.html" class="active">Home</a><a href="about/about.html">About</a><a href="app/app.html">App</a><a href="faq/faq.html">FAQ</a><a href="contact/contact.html">Contact</a><a href="shop/shop.html">Shop</a><a href="documentation/documentation.html">Documentation</a></nav>
+  <div class="header-actions">
+    <span class="pill ok">Local Network: Connected</span>
+    <a class="btn accent btn-sm" href="shop/shop.html">Shop</a>
+    <a class="avatar-btn" href="contact/contact.html" aria-label="Account">&#9786;</a>
+  </div>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false">&#9776;</button>
+</div></header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="status-pill"><i class="dot"></i>Local Engine v2.4 &bull; Offline Ready</span>
+        <h1>Home Automation.<br><span>Intelligent Energy Management.</span></h1>
+        <p>HASS is an engineered, local-first IoT system designed to control, automate, and monitor household electrical devices while eliminating parasitic energy waste.</p>
+        <a class="btn-primary" href="#architecture">Explore System Architecture <svg class="ic"><use href="#i-arrow-down"/></svg></a>
+        <a class="btn-outline" href="shop/shop.html#specs">Hardware Specifications</a>
+      </div>
+      <div class="hero-card">
+        <div class="img-slot hero-image" data-label="Hero image: HASS controller + phone app">
+          <img src="home/img/Authentic HASS physical hardware prototype showing modular chassis, ventilation matrix, embedded diagnostic display and companion mobile app.png" alt="Authentic HASS physical hardware prototype">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mascot-row">
+    <aside class="mascot-guide" aria-label="Tip from HASS Bot">
+      <img class="mascot-guide__img" src="common/img/mascot/hass-bot-wave.png" alt="HASS Bot waving" width="150" height="150">
+      <div class="mascot-guide__bubble">
+        <span class="mascot-guide__tag">HASS BOT</span>
+        <p>Hi, I&rsquo;m HASS Bot! I&rsquo;ll be your guide. Scroll on and I&rsquo;ll show you how the controller, relays and app work together, all locally.</p>
+        <a class="mascot-guide__link" href="#architecture">Start the tour <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+        <a class="mascot-guide__link" href="documentation/documentation.html">Read the full documentation <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ARCHITECTURAL BREAKDOWN -->
+  <section class="band" id="architecture">
+    <div class="container">
+      <span class="eyebrow">Architectural Breakdown</span>
+      <h2 class="h2-left">Industrial-Grade Physical Computing. No Black Boxes.</h2>
+      <p class="sub sub-left">Every sub-module is accessible, addressable, and decoupled. HASS replaces fragility with heavy-duty solid-state actuation and high-frequency load telemetry.</p>
+      <div class="arch-grid">
+        <div class="module-list">
+          <a class="module-card" href="shop/shop.html#inside-box">
+            <div class="module-top"><span class="module-label">Module 01 &bull; Core</span><span class="chip">I2C / SPI</span></div>
+            <h3>Central Controller Unit</h3>
+            <p>Embedded central processor executing deterministic Java micro-routines with microsecond precision. Governs safe boot states, thermal interlocks, and local scheduling without network reliance.</p>
+          </a>
+          <a class="module-card" href="shop/shop.html#inside-box">
+            <div class="module-top"><span class="module-label">Module 02 &bull; Actuation</span><span class="chip">16A RMS / 240V</span></div>
+            <h3>Smart Solid-State Relay Quad</h3>
+            <p>Four high-amperage modular channels designed for resistive and inductive household loads (HVAC compressors, hydronic heating loops, smart entertainment banks). Zero mechanical contact pitting.</p>
+          </a>
+          <a class="module-card" href="shop/shop.html#inside-box">
+            <div class="module-top"><span class="module-label">Module 03 &bull; Telemetry</span><span class="chip">&plusmn;0.5% Accuracy</span></div>
+            <h3>Multi-Sensor Telemetry Array</h3>
+            <p>Continuous shunt current sensing, ambient chassis thermistors, and room-level illuminance probes feeding the local rule matrix for responsive load shedding.</p>
+          </a>
+          <a class="module-card" href="documentation/documentation.html#chapter-4-system-architecture-and-design">
+            <div class="module-top"><span class="module-label">Module 04 &bull; Comm Bus</span><span class="chip">LAN &bull; mDNS</span></div>
+            <h3>Local Network Fabric</h3>
+            <p>Strict peer-to-peer communication with HASS companion mobile units. No remote socket dependencies, ensuring local commands operate in under 15 milliseconds.</p>
+          </a>
+        </div>
+        <!-- Chassis topology schema: the whole panel is an image -->
+        <div class="img-slot topology-image" data-label="Chassis topology schema (whole panel image)">
+          <img src="home/img/hass-diagram-exact-fixed.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SILENT DRAIN vs REMEDIATION -->
+  <section class="light">
+    <div class="container compare-grid">
+      <article class="compare-card">
+        <span class="badge badge-red"><svg class="ic"><use href="#i-alert"/></svg>The Silent Drain</span>
+        <h2>Households Bleed Up to 23% in Unmonitored Standby Loads.</h2>
+        <p class="lead">Inverters, media consoles, redundant chargers, and idle heating pumps quietly draw continuous current 24 hours a day without homeowner visibility or scheduled intervention.</p>
+        <div class="meter">
+          <div class="meter-row"><span>Conventional Parasitic Standby Draw</span><b class="red">~280W Continuous</b></div>
+          <div class="track"><i class="fill fill-red"></i></div>
+          <small>Equivalent to 6.7 kWh of unutilized thermal dissipation per day</small>
+        </div>
+        <ul class="points points-bad">
+          <li><svg class="ic"><use href="#i-x"/></svg>No individual socket metering</li>
+          <li><svg class="ic"><use href="#i-x"/></svg>Remote cloud servers required to trigger basic schedules</li>
+          <li><svg class="ic"><use href="#i-x"/></svg>Outdated breaker boxes lack programmable solid-state cutoff</li>
+        </ul>
+      </article>
+      <article class="compare-card compare-card-hot">
+        <span class="badge badge-green"><svg class="ic"><use href="#i-check-circle"/></svg>The HASS Remediation</span>
+        <h2>Deterministic Circuit Cutoff &amp; Millisecond Visibility.</h2>
+        <p class="lead">HASS mounts upstream of standard loads, inspecting draw signatures at high sampling rates. It executes true zero-current isolation when connected devices enter idle sleep states.</p>
+        <div class="meter">
+          <div class="meter-row"><span>HASS Gated Standby Draw</span><b class="green">0.8W Engine Idle</b></div>
+          <div class="track"><i class="fill fill-green"></i></div>
+          <small class="green">99.7% reduction in inactive device vampire draw</small>
+        </div>
+        <ul class="points points-good">
+          <li><svg class="ic"><use href="#i-check"/></svg>Instant physical switch actuation via 16A solid-state relays</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Autonomous local schedules execute even during ISP line cuts</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>High-granularity sub-watt load inspection per physical slot</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ZERO-CLOUD PIPELINE -->
+  <section class="band band-center">
+    <div class="container">
+      <span class="eyebrow">Zero-Cloud Pipeline</span>
+      <h2>How HASS Operates Within Your Premises</h2>
+      <p class="sub">Control loops and data telemetry never leave your home network perimeter. All commands resolve locally in deterministic sub-millisecond timelines.</p>
+      <div class="pipeline">
+        <a class="step" href="documentation/documentation.html#chapter-5-hardware-design">
+          <span class="step-ic ic-orange"><svg class="ic"><use href="#i-radio"/></svg></span>
+          <span class="step-label orange">01 &bull; Sensing</span><h3>Current &amp; Therm</h3>
+          <p>Shunts measure instantaneous amperage and line voltage at 60 Hz.</p>
+        </a>
+        <a class="step" href="documentation/documentation.html#chapter-5-hardware-design">
+          <span class="step-ic ic-orange"><svg class="ic"><use href="#i-chip"/></svg></span>
+          <span class="step-label orange">02 &bull; Compute</span><h3>HASS Controller</h3>
+          <p>Local embedded logic evaluates active state machines and triggers.</p>
+        </a>
+        <a class="step" href="documentation/documentation.html#chapter-4-system-architecture-and-design">
+          <span class="step-ic ic-green"><svg class="ic"><use href="#i-wifi"/></svg></span>
+          <span class="step-label green">03 &bull; Mesh</span><h3>Encrypted LAN</h3>
+          <p>Direct socket broadcast across local WiFi without internet gateway hops.</p>
+        </a>
+        <a class="step" href="app/app.html">
+          <span class="step-ic ic-orange"><svg class="ic"><use href="#i-phone"/></svg></span>
+          <span class="step-label orange">04 &bull; Display</span><h3>HASS Mobile</h3>
+          <p>Real-time interface receives live telemetry for immediate user manual switch.</p>
+        </a>
+        <a class="step" href="shop/shop.html#inside-box">
+          <span class="step-ic ic-green"><svg class="ic"><use href="#i-toggle"/></svg></span>
+          <span class="step-label green">05 &bull; Actuation</span><h3>Relay Isolation</h3>
+          <p>Solid-state physical relays cut or energize device conductors in &lt;15ms.</p>
+        </a>
+      </div>
+      <div class="pipeline-note">Zero external cloud dependency &bull; Non-volatile local schedule persistence &bull; Fully operational offline</div>
+    </div>
+  </section>
+
+  <!-- BEHAVIORAL PATTERN RECOGNITION -->
+  <div class="container mascot-row">
+    <aside class="mascot-guide mascot-guide--flip" aria-label="Tip from HASS Bot">
+      <img class="mascot-guide__img" src="common/img/mascot/hass-bot-idea.png" alt="HASS Bot with an idea" width="150" height="150">
+      <div class="mascot-guide__bubble">
+        <span class="mascot-guide__tag">HASS BOT</span>
+        <p>Bright idea: HASS learns your daily routine and switches off wasted standby power by itself. No chatbot, no cloud.</p>
+        <a class="mascot-guide__link" href="documentation/documentation.html#chapter-6-software-design-and-implementation">How the AI part works <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </aside>
+  </div>
+
+  <section class="light">
+    <div class="container">
+      <span class="status-pill pill-orange"><svg class="ic"><use href="#i-trend-up"/></svg>Deterministic Machine Intelligence</span>
+      <h2 class="h2-left">Behavioral Pattern Recognition Without Chatbots.</h2>
+      <p class="sub sub-left sub-wide">HASS does not converse; it observes load signatures. Embedded statistical models map diurnal cadence, recognize aberrant long-tail draws, and propose deterministic rules for owner confirmation.</p>
+      <div class="insight-grid">
+        <article class="insight-card">
+          <span class="insight-ic"><svg class="ic"><use href="#i-clock"/></svg></span>
+          <h3>Sequence Recognition</h3>
+          <p>Detects cyclical morning and evening routines (e.g., espresso heating element followed by workspace lighting) and automates timing buffers after confirming confidence thresholds.</p>
+          <div class="mono-box">Signature Match: <b class="green">98.4% Confidence</b></div>
+        </article>
+        <article class="insight-card">
+          <span class="insight-ic ic-soft-orange"><svg class="ic"><use href="#i-search"/></svg></span>
+          <h3>Atypical Load Flagging</h3>
+          <p>Flags prolonged continuous operation of high-draw resistive circuits (such as an unattended space heater or stalling sub-pump motor) to protect circuits and prevent waste.</p>
+          <div class="mono-box">Alert Trigger: <b class="orange">&gt; 120m Sustained &gt; 1.4kW</b></div>
+        </article>
+        <article class="insight-card">
+          <span class="insight-ic"><svg class="ic"><use href="#i-hand"/></svg></span>
+          <h3>Owner-Supervised Confirmation</h3>
+          <p>HASS never executes disruptive unprompted changes. It presents verified savings opportunities to the companion app for a clean, single-tap acceptance.</p>
+          <div class="mono-box">Rule Generation: <b>1-Tap Verification</b></div>
+        </article>
+      </div>
+      <div class="chart-card">
+        <div class="chart-head">
+          <div><small>Real-time load heuristic</small><h3>Signature Inspection: Slot 02 [Water Heater Loop]</h3></div>
+          <span class="badge badge-green">Normal Diurnal Cycle</span>
+        </div>
+        <div class="chart-box">
+          <span class="chart-threshold">Anomaly Threshold (2200W)</span>
+          <svg viewBox="0 0 1100 170" preserveAspectRatio="none" aria-label="Water heater load over 24 hours">
+            <line x1="12" y1="62" x2="1088" y2="62" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="5 4"/>
+            <path d="M12 146 H90 L98 74 H178 L186 146 H370 L378 80 H458 L466 146 H650 L658 70 H738 L746 146 H920 L928 56 H1010 L1018 146 H1088 V146 H12Z" fill="#fbeee9"/>
+            <path d="M12 146 H90 L98 74 H178 L186 146 H370 L378 80 H458 L466 146 H650 L658 70 H738 L746 146 H920 L928 56 H1010 L1018 146 H1088" fill="none" stroke="#f05a28" stroke-width="2.4"/>
+          </svg>
+        </div>
+        <div class="chart-axis"><span>00:00</span><span>04:00</span><span>08:00</span><span>12:00</span><span>16:00</span><span>20:00</span><span>24:00</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REAL-TIME TELEMETRY CONSOLE -->
+  <section class="band">
+    <div class="container">
+      <div class="console-head">
+        <div>
+          <span class="eyebrow">Live Instrumentation</span>
+          <h2 class="h2-left">Real-Time Telemetry Console</h2>
+          <p class="sub sub-left">Live sub-metering breakdown across connected HASS slots. Every watt-hour is accounted for locally without external data brokerage.</p>
+        </div>
+        <div class="console-actions">
+          <button type="button" class="pill-btn">Cycle Relays Test</button>
+          <span class="pill-btn"><i class="dot"></i><b class="green">Sampling: 60 Hz</b></span>
+        </div>
+      </div>
+      <div class="console-grid">
+        <aside class="draw-card">
+          <small class="label">Total Active Real-Time Draw</small>
+          <div class="draw-value">1.84 <span>kW</span></div>
+          <div class="draw-mini">
+            <div class="mini"><small>Ambient Temp</small><b>24.2&deg;C</b></div>
+            <div class="mini"><small>Mains Freq</small><b class="green">59.98 Hz</b></div>
+          </div>
+          <div class="agg">
+            <div class="agg-row"><small>Daily Energy Aggregate</small><b>14.6 kWh</b></div>
+            <p>Deterministic baseline calibrated for current seasonal window.</p>
+          </div>
+          <div class="draw-foot"><span>Bus Voltage: 231.4V</span><span>Power Factor: 0.96</span></div>
+        </aside>
+        <div class="channels-card">
+          <div class="channels-head"><small>Addressable Channels</small><small class="green">4 of 4 Channels Allocated</small></div>
+          <div class="channel">
+            <i class="dot"></i>
+            <div class="channel-name"><b>HVAC Heat Pump Loop</b><small>Slot 01 &bull; Relay: Solid State 16A</small></div>
+            <div class="channel-load"><b>1,150 W</b><small>4.97 A RMS</small></div>
+            <span class="tag-active">Active</span>
+          </div>
+          <div class="channel">
+            <i class="dot"></i>
+            <div class="channel-name"><b>Refrigeration &amp; Sub-Zero Compressor</b><small>Slot 02 &bull; Relay: Solid State 16A</small></div>
+            <div class="channel-load"><b>220 W</b><small>0.95 A RMS</small></div>
+            <span class="tag-active">Active</span>
+          </div>
+          <div class="channel">
+            <i class="dot"></i>
+            <div class="channel-name"><b>Media Hub &amp; Audio Rack</b><small>Slot 03 &bull; Relay: Solid State 16A</small></div>
+            <div class="channel-load"><b>180 W</b><small>0.78 A RMS</small></div>
+            <span class="tag-active">Active</span>
+          </div>
+          <div class="channel channel-off">
+            <i class="dot dot-gray"></i>
+            <div class="channel-name"><b>Desk Peripherals &amp; Workspace</b><small>Slot 04 &bull; Auto-Standby Engaged</small></div>
+            <div class="channel-load"><b>45 W</b><small>0.19 A RMS</small></div>
+            <span class="tag-gated">Gated</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUR HOME DATA -->
+  <section class="light" id="privacy">
+    <div class="container">
+      <div class="privacy-card">
+        <div class="privacy-copy">
+          <span class="badge badge-green"><svg class="ic"><use href="#i-shield"/></svg>Zero-Telemetry Cryptographic Boundary</span>
+          <h2>Your Home Data Belongs in Your Home. Period.</h2>
+          <p class="lead">Commercial IoT vendors routinely monetize smart socket data, mapping occupant occupancy and selling electrical usage habits. HASS maintains a zero-telemetry guarantee: automation schedules, power signatures, and presence indices live exclusively in local flash storage.</p>
+          <div class="privacy-mini">
+            <a class="mini-card" href="about/about.html#privacy"><svg class="ic orange"><use href="#i-cloud-off"/></svg><h3>No Cloud Relay</h3><p>Communication is bound to 192.168.x.x local subnet ranges. Never pinged to external hosts.</p></a>
+            <a class="mini-card" href="documentation/documentation.html#chapter-4-system-architecture-and-design"><svg class="ic orange"><use href="#i-key"/></svg><h3>WireGuard Tunneling</h3><p>Optional off-site mobile access creates a direct peer-to-peer cryptographic pipe directly into your router.</p></a>
+          </div>
+        </div>
+        <aside class="subnet-card">
+          <small class="label">Subnet Topology Check</small>
+          <div class="subnet-row"><span>192.168.1.100 [HASS CORE]</span><b class="green">Bound Local</b></div>
+          <div class="subnet-row"><span>External WAN Egress</span><b>Blocked (0 pkts)</b></div>
+          <div class="subnet-row"><span>Public Cloud Telemetry</span><b>Disabled</b></div>
+          <div class="subnet-row"><span>mDNS Node Discovery</span><b class="green">Authenticated</b></div>
+          <blockquote>&ldquo;If internet connectivity is severed completely at the ISP fiber termination, 100% of automation macros, alarms, and relay rules continue operating without interruption.&rdquo;</blockquote>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIFICATIONS -->
+  <section class="band band-center" id="specs">
+    <div class="container">
+      <span class="eyebrow">Holistic Architecture</span>
+      <h2>Complete Hardware &amp; Software Specifications</h2>
+      <p class="sub">Built for standard electrical distribution boxes and modular field deployment.</p>
+      <div class="spec-wrap">
+        <a class="spec-box" href="shop/shop.html#specs">
+          <small class="orange">Electrical</small><h3>Mains &amp; Relays</h3>
+          <ul><li>Input: 110V - 240V AC (50/60 Hz)</li><li>Dual IEC Industrial Inlet</li><li>4&times; 16A Solid-State Relays</li><li>Per-channel zero-crossing detect</li></ul>
+        </a>
+        <a class="spec-box" href="shop/shop.html#specs">
+          <small class="orange">Connectivity</small><h3>Local Mesh Bus</h3>
+          <ul><li>WiFi 802.11 b/g/n (2.4 GHz)</li><li>10/100 Fast Ethernet RJ45</li><li>Direct mDNS Peer Discovery</li><li>AES-GCM Local Token Auth</li></ul>
+        </a>
+        <a class="spec-box" href="shop/shop.html#specs">
+          <small class="orange">Computing</small><h3>Embedded Core</h3>
+          <ul><li>Embedded Java Real-Time OS</li><li>Sub-15ms trigger latency</li><li>Internal non-volatile Flash</li><li>Hardware thermal watchdogs</li></ul>
+        </a>
+        <a class="spec-box" href="shop/shop.html#specs">
+          <small class="orange">Physical</small><h3>Chassis Mechanics</h3>
+          <ul><li>Milled high-impact polymer frame</li><li>Convective matrix ventilation</li><li>Integrated TFT LCD bezel panel</li><li>Keyed 4-slot modular base</li></ul>
+        </a>
+      </div>
+<aside class="mascot-guide" aria-label="Tip from HASS Bot">
+      <img class="mascot-guide__img" src="common/img/mascot/hass-bot-thumbs.png" alt="HASS Bot giving a thumbs up" width="150" height="150">
+      <div class="mascot-guide__bubble">
+        <span class="mascot-guide__tag">HASS BOT</span>
+        <p>Convinced? You can order the controller kit now, or read the documentation first. I&rsquo;d do both!</p>
+        <a class="mascot-guide__link" href="shop/shop.html">Go to the shop <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+        <a class="mascot-guide__link" href="documentation/documentation.html">Read the project book <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </aside>
+      <div class="cta-card">
+        <div>
+          <h2>Ready to Deploy Local-First Power Management?</h2>
+          <p>Integrate HASS into your residential or commercial electrical architecture. Hardware packages include the Controller, 4 Relay modules, and developer toolchain.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn-soft" href="documentation/documentation.html">View Documentation</a>
+          <a class="btn-primary" href="shop/shop.html">Order Controller Kit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="index.html">
+        <div class="img-slot logo-image" data-label="LOGO">
+          <img src="common/img/HASS-project-LOGO.png" alt="HASS-project-LOGO">
+        </div>
+        <span>HASS Core</span>
+      </a>
+      <p>Precision-engineered physical computing, local-first automation, and tactile environmental telemetry for architectural spaces.</p>
+      <span class="pill ok">Operational: Mesh Node Alpha 01</span>
+    </div>
+    <div><h4>System</h4><ul><li><a href="shop/shop.html#product">Controller</a></li><li><a href="shop/shop.html#inside-box">Relays &amp; Actuators</a></li><li><a href="shop/shop.html#inside-box">Sensors &amp; Environmental</a></li><li><a href="app/app.html">HASS OS App</a></li></ul></div>
+    <div><h4>Resources</h4><ul><li><a href="documentation/documentation.html">Documentation</a></li><li><a href="documentation/documentation.html#chapter-6-software-design-and-implementation">Firmware Binaries</a></li><li><a href="documentation/documentation.html#cloud-database-and-data-model">REST &amp; WebSocket API</a></li><li><a href="documentation/documentation.html#pin-assignment-and-wiring">Hardware Schematics</a></li></ul></div>
+    <div><h4>Company &amp; Legal</h4><ul><li><a href="about/about.html#recognition">About RoboDam</a></li><li><a href="about/about.html#privacy">Local-First Guarantee</a></li><li><a href="documentation/documentation.html#chapter-7-security-and-authentication">Open Standards &amp; Privacy</a></li><li><a href="contact/contact.html">Contact Engineering</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 HASS RoboDam Systems Inc. All physical rights reserved.</span><span class="mono"><a href="about/about.html#privacy">Privacy Spec</a> &nbsp; <a href="about/about.html#privacy">Zero-Cloud Protocol</a> &nbsp; <a href="documentation/documentation.html">Compliance EN 50491</a></span></div>
+</div></footer>
+
+<script src="common/common.js"></script>
+<script src="home/home.js"></script>
+</body>
+</html>

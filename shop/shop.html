@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop | HASS Controller Base Station</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../common/common.css">
+<link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+<header class="site-header"><div class="container">
+  <a class="brand" href="../index.html">
+    <div class="img-slot logo-image" data-label="LOGO">
+      <img src="../common/img/HASS-project-LOGO.png" alt="HASS-project-LOGO">
+    </div>
+    <span>HASS<small>SMART HOME IOT</small></span>
+  </a>
+  <nav class="main-nav" id="nav"><a href="../index.html">Home</a><a href="../about/about.html">About</a><a href="../app/app.html">App</a><a href="../faq/faq.html">FAQ</a><a href="../contact/contact.html">Contact</a><a href="../shop/shop.html" class="active">Shop</a><a href="../documentation/documentation.html">Documentation</a></nav>
+  <div class="header-actions">
+    <span class="pill ok">Local Network: Connected</span>
+    <a class="btn accent btn-sm" href="../shop/shop.html">Shop</a>
+    <a class="avatar-btn" href="../contact/contact.html" aria-label="Account">&#9786;</a>
+  </div>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false">&#9776;</button>
+</div></header>
+<div class="subbar">
+    <div class="container subbar-inner">
+      <span><i class="dot"></i>DIRECT HARDWARE CHANNEL <em>/</em> <small>Batch ID: #2026-REV-A04</small></span>
+      <span class="subbar-right">
+        <a href="../about/about.html#privacy"><svg class="ic"><use href="#i-check-circle"/></svg>Zero-Cloud Architecture</a>
+        <a href="../contact/contact.html"><svg class="ic orange"><use href="#i-truck"/></svg>Global Priority Dispatch</a>
+      </span>
+    </div>
+  </div>
+
+<main>
+
+  <div class="container mascot-row">
+    <aside class="mascot-guide" aria-label="Tip from HASS Bot">
+      <img class="mascot-guide__img" src="../common/img/mascot/hass-bot-run.png" alt="HASS Bot running" width="150" height="150">
+      <div class="mascot-guide__bubble">
+        <span class="mascot-guide__tag">HASS BOT</span>
+        <p>Let&rsquo;s build your system! Pick how many devices you need, then split them between 10A and 30A relays. I&rsquo;ll add up the price for you.</p>
+        <a class="mascot-guide__link" href="#product">Configure my controller <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+        <a class="mascot-guide__link" href="../documentation/documentation.html#pin-assignment-and-wiring">How it is wired <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </aside>
+  </div>
+
+<!-- ================= PRODUCT ================= -->
+<section class="product container" id="product">
+  <div class="product-left">
+    <div class="render-card">
+      <div class="render-top">
+        <span class="render-tag"><span class="cad">CAD.ISO.01</span>CHASSIS_RENDER // RTOS V2.4</span>
+        <span class="tft"><i class="dot"></i>TFT ACTIVE</span>
+      </div>
+      <div class="render-stage">
+        <div class="img-slot img-slot--contain product-hero-image" data-label="Product image: selected HASS configuration">
+          <img id="project-image" src="img/Device2.jpg" alt="HASS system with 2 devices">
+        </div>
+        <div class="preview-info"><small>SELECTED CONFIGURATION</small><b id="preview-text">2 Devices</b></div>
+      </div>
+      <div class="render-stats">
+        <a class="stat-tile" href="#specs"><small>SOLID-STATE</small><b>64A Total RMS</b></a>
+        <a class="stat-tile" href="#specs"><small>LOCAL LATENCY</small><b>&lt; 1.2 ms</b></a>
+        <a class="stat-tile" href="#specs"><small>COMPUTE</small><b>Dual 240MHz</b></a>
+      </div>
+    </div>
+    <div class="feature-row">
+      <a class="feature-chip" href="#specs"><span class="fc-icon"><svg class="ic"><use href="#i-grid"/></svg></span><span class="fc-text"><small>MODULE BAY</small><b>Hot-Swappable 4-Slot Base</b></span></a>
+      <a class="feature-chip" href="#specs"><span class="fc-icon green"><svg class="ic"><use href="#i-network"/></svg></span><span class="fc-text"><small>BUS INTERFACES</small><b>Dual GbE + Isolated I2C</b></span></a>
+      <a class="feature-chip" href="../documentation/documentation.html#chapter-6-software-design-and-implementation"><span class="fc-icon"><svg class="ic"><use href="#i-cpu"/></svg></span><span class="fc-text"><small>KERNEL CORE</small><b>Hardened Java RTOS</b></span></a>
+    </div>
+  </div>
+
+  <div class="product-right">
+    <div class="sku-row"><span class="gen-tag">FIRST GENERATION</span><span class="sku">SKU: HASS-HW-CTRL-01</span></div>
+    <h1>HASS Controller Base Station</h1>
+    <p class="product-lead">Zero-cloud, high-integrity physical computing platform designed for architectural residential installations, server-rack DIN rails, and sub-millisecond local environmental telemetry.</p>
+
+    <form class="buy-card" id="buy-form" novalidate>
+      <div class="price-row">
+        <div class="price"><b id="price-total">2,100</b><span>EGP / Complete System</span></div>
+        <span class="stock"><i class="dot"></i>In Stock</span>
+      </div>
+      <p class="dispatch">Dispatches in 24-48 Hours from Regional Distribution Hub</p>
+
+      <h6 class="opt-title">NUMBER OF DEVICES</h6>
+      <div class="device-grid" id="device-grid" role="radiogroup" aria-label="Number of devices">
+        <button type="button" class="device-option active" data-devices="2" role="radio" aria-checked="true"><span class="device-number">2</span><span class="device-word">Devices</span><span class="device-check">&#10003;</span></button>
+        <button type="button" class="device-option" data-devices="4" role="radio" aria-checked="false"><span class="device-number">4</span><span class="device-word">Devices</span><span class="device-check">&#10003;</span></button>
+        <button type="button" class="device-option" data-devices="8" role="radio" aria-checked="false"><span class="device-number">8</span><span class="device-word">Devices</span><span class="device-check">&#10003;</span></button>
+        <button type="button" class="device-option" data-devices="16" role="radio" aria-checked="false"><span class="device-number">16</span><span class="device-word">Devices</span><span class="device-check">&#10003;</span></button>
+        <button type="button" class="device-option" data-devices="32" role="radio" aria-checked="false"><span class="device-number">32</span><span class="device-word">Devices</span><span class="device-check">&#10003;</span></button>
+      </div>
+      <p class="opt-note" id="device-description">Perfect for a small smart home setup.</p>
+
+      <h6 class="opt-title">CUSTOMIZE RELAY DISTRIBUTION</h6>
+      <div class="relay-grid">
+        <div class="relay-box">
+          <span class="relay-label">10A RELAY</span>
+          <div class="stepper">
+            <button type="button" class="step-btn" id="minus-10" aria-label="Remove one 10A relay">&minus;</button>
+            <output id="relay-10" aria-live="polite">2</output>
+            <button type="button" class="step-btn" id="plus-10" aria-label="Add one 10A relay">+</button>
+          </div>
+        </div>
+        <div class="relay-box">
+          <span class="relay-label">30A RELAY <em>+80 EGP each</em></span>
+          <div class="stepper">
+            <button type="button" class="step-btn" id="minus-30" aria-label="Remove one 30A relay">&minus;</button>
+            <output id="relay-30" aria-live="polite">0</output>
+            <button type="button" class="step-btn" id="plus-30" aria-label="Add one 30A relay">+</button>
+          </div>
+        </div>
+      </div>
+      <p class="validation" id="validation" role="status"></p>
+
+      <div class="summary">
+        <div><small>TOTAL DEVICES</small><b id="sum-devices">2</b></div>
+        <div><small>10A / 30A</small><b id="sum-relay">2 / 0</b></div>
+      </div>
+
+      <button class="add-btn" type="submit" id="continue-btn"><svg class="ic"><use href="#i-bag"/></svg>Continue <span class="mono" id="add-total">[2,100 EGP]</span></button>
+      <a class="spec-btn" href="../documentation/documentation.html#pin-assignment-and-wiring"><svg class="ic"><use href="#i-download-circle"/></svg>Download Wiring &amp; Mechanical Spec Sheet (PDF)</a>
+
+      <div class="assure">
+        <a href="../contact/contact.html"><svg class="ic orange"><use href="#i-history"/></svg>30-Day Evaluation</a>
+        <a href="../contact/contact.html"><svg class="ic orange"><use href="#i-shield"/></svg>3-Year Hardware Warranty</a>
+        <a href="../about/about.html#privacy"><svg class="ic green"><use href="#i-lock"/></svg>100% Local-First</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+  <div class="container mascot-row">
+    <aside class="mascot-guide mascot-guide--flip" aria-label="Tip from HASS Bot">
+      <img class="mascot-guide__img" src="../common/img/mascot/hass-bot-books.png" alt="HASS Bot carrying books" width="150" height="150">
+      <div class="mascot-guide__bubble">
+        <span class="mascot-guide__tag">HASS BOT</span>
+        <p>Everything that comes with your controller is listed below. No surprises.</p>
+        <a class="mascot-guide__link" href="../documentation/documentation.html#hardware-components">Component details (Table 9) <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </aside>
+  </div>
+
+<!-- ================= WHAT'S INSIDE THE BOX ================= -->
+<section class="band gray" id="inside-box">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">PACKAGE TELEMETRY // BOM SPEC 1.0</span>
+        <h2>What's Inside the Box</h2>
+      </div>
+      <p>Every master kit is factory-calibrated, serial-stamped, and packaged in fully recyclable high-density molded pulp.</p>
+    </div>
+    <div class="box-grid">
+      <article class="box-card">
+        <div class="box-top"><b class="box-num">01</b><span class="box-tag">CORE HOST</span></div>
+        <div class="box-media"><div class="img-slot box-item-image" data-label="Box item 1: master controller unit">
+          <img src="img/HASS Master Contoller Unit.png" alt="HASS Master Contoller Unit">
+        </div></div>
+        <h3>HASS Master Controller Unit</h3>
+        <p>Featuring integrated IPS micro-display, local embedded web server, hardware watchdog timer, and internal surge suppressor.</p>
+        <div class="box-foot"><span>QTY: 1 UNIT</span><b class="ok">QC INSPECTED</b></div>
+      </article>
+      <article class="box-card">
+        <div class="box-top"><b class="box-num">02</b><span class="box-tag">ACTUATION</span></div>
+        <div class="box-media"><div class="img-slot box-item-image" data-label="Box item 2: solid-state relay cards">
+          <img src="img/4x Modular Solid-state Relay Cards.png" alt="4x Modular Solid-state Relay Cards">
+        </div></div>
+        <h3>4x Modular Solid-State Relay Cards</h3>
+        <p>16A 250V RMS per channel, zero mechanical noise, silent optocoupled trigger circuits rated for continuous thermal duty.</p>
+        <div class="box-foot"><span>QTY: 4 CARDS</span><b class="ok">HOT-PLUG READY</b></div>
+      </article>
+      <article class="box-card">
+        <div class="box-top"><b class="box-num">03</b><span class="box-tag">INTERCONNECT</span></div>
+        <div class="box-media"><div class="img-slot box-item-image" data-label="Box item 3: power harness and terminals">
+          <img src="img/Industrial Power Harness & TErminals.png" alt="Industrial Power Harness & TErminals">
+        </div></div>
+        <h3>Industrial Power Harness &amp; Terminals</h3>
+        <p>Heavy-gauge dual IEC modular wiring whip, rising cage screw terminal blocks, and flame-retardant terminal covers.</p>
+        <div class="box-foot"><span>QTY: 1 SET</span><b>UL94 V-0 COMPLIANT</b></div>
+      </article>
+      <article class="box-card">
+        <div class="box-top"><b class="box-num">04</b><span class="box-tag">SENSORY BUS</span></div>
+        <div class="box-media icon-box"><svg class="ic big red"><use href="#i-zap"/></svg><small>CT Probes &amp; Isolated Shunt</small></div>
+        <h3>Precision Current Telemetry Array</h3>
+        <p>Embedded micro-second sampling shunts and auxiliary probe connector for micro-watt power monitoring per individual channel.</p>
+        <div class="box-foot"><span>QTY: INTEGRATED</span><b class="ok">CALIBRATED</b></div>
+      </article>
+      <article class="box-card">
+        <div class="box-top"><b class="box-num">05</b><span class="box-tag">MOUNTING</span></div>
+        <div class="box-media icon-box"><svg class="ic big dark"><use href="#i-ruler"/></svg><small>1:1 Laser-Etched Template</small></div>
+        <h3>Wall Mount Hardware &amp; Template</h3>
+        <p>Precision alignment vinyl jig, 4x stainless steel anti-vibration standoffs, masonry anchors, and torque guide.</p>
+        <div class="box-foot"><span>QTY: FULL MOUNT KIT</span><b>STAINLESS 316</b></div>
+      </article>
+      <article class="box-card">
+        <div class="box-top"><b class="box-num">06</b><span class="box-tag">DOCUMENTATION</span></div>
+        <a class="box-media icon-box" href="../documentation/documentation.html"><svg class="ic big green"><use href="#i-book"/></svg><small>Architectural Manual</small></a>
+        <h3>Quick-Start Engineering Manual</h3>
+        <p>High-contrast fold-out schematics, terminal pinout map, and offline IP network discovery cheat sheet.</p>
+        <div class="box-foot"><span>QTY: 1 EDITION</span><b>OFFLINE READY</b></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPEC MATRIX ================= -->
+<section class="band light" id="specs">
+  <div class="container">
+    <span class="eyebrow">DATASHEET REF // HASS-DS-CTRL01-REV3</span>
+    <h2 class="h2-big">Complete Hardware Specification Matrix</h2>
+    <p class="sub">Engineered to commercial automation tolerances with no consumer-grade electrolytic capacitors in high-stress paths.</p>
+
+    <div class="spec-list">
+      <article class="spec-row">
+        <div class="spec-title"><span class="spec-icon"><svg class="ic orange"><use href="#i-zap"/></svg></span><div><b>Electrical</b><small>POWER SUBSYSTEM</small></div></div>
+        <div class="spec-cell"><small>INPUT VOLTAGE</small><b>110V &ndash; 240V AC</b><span>50/60 Hz auto-sensing universal</span></div>
+        <div class="spec-cell"><small>CHANNEL CURRENT RATING</small><b>16A RMS Continuous</b><span>64A max simultaneous array load</span></div>
+        <div class="spec-cell"><small>STANDBY CONSUMPTION</small><b class="ok">&lt; 0.8 Watts</b><span>Active display dim state</span></div>
+      </article>
+      <article class="spec-row">
+        <div class="spec-title"><span class="spec-icon mint"><svg class="ic green"><use href="#i-toggle"/></svg></span><div><b>Relays</b><small>SWITCHING ENGINE</small></div></div>
+        <div class="spec-cell"><small>SWITCHING TOPOLOGY</small><b>Solid-State Zero-Crossing</b><span>Zero arcing, zero contact wear</span></div>
+        <div class="spec-cell"><small>MECHANICAL CONTACTS</small><b>0 Physical Points</b><span>Completely silent tactile operation</span></div>
+        <div class="spec-cell"><small>CYCLE ENDURANCE</small><b class="ok">10,000,000+ Cycles</b><span>MTBF &gt; 120,000 continuous hours</span></div>
+      </article>
+      <article class="spec-row">
+        <div class="spec-title"><span class="spec-icon"><svg class="ic dark"><use href="#i-cpu-box"/></svg></span><div><b>Compute</b><small>SOC &amp; MEMORY</small></div></div>
+        <div class="spec-cell"><small>MICROPROCESSOR</small><b>Dual-Core Xtensa 240MHz</b><span>Deterministic Real-Time OS scheduler</span></div>
+        <div class="spec-cell"><small>EMBEDDED MEMORY</small><b>16MB Flash / 8MB PSRAM</b><span>Supports roll-back firmware dual partitions</span></div>
+        <div class="spec-cell"><small>HARDWARE CRYPTOGRAPHY</small><b>AES-256 / SHA-2 / RSA-4096</b><span>Secure element with physical PUF</span></div>
+      </article>
+      <article class="spec-row">
+        <div class="spec-title"><span class="spec-icon"><svg class="ic orange"><use href="#i-router"/></svg></span><div><b>Networking</b><small>CONNECTIVITY MATRIX</small></div></div>
+        <div class="spec-cell"><small>WIRED ETHERNET</small><b>10/100 Fast Ethernet RJ45</b><span>Transformer isolated magnetic jack</span></div>
+        <div class="spec-cell"><small>WIRELESS INTERFACE</small><b>2.4 GHz 802.11 b/g/n</b><span>Onboard 3D PCB trace antenna</span></div>
+        <div class="spec-cell"><small>PROTOCOL LAYER</small><b class="ok">mDNS &amp; WebSocket RPC</b><span>Pure LAN discovery with zero telemetry outbound</span></div>
+      </article>
+      <article class="spec-row">
+        <div class="spec-title"><span class="spec-icon"><svg class="ic dark"><use href="#i-compass"/></svg></span><div><b>Physical</b><small>DIMENSIONS &amp; THERMAL</small></div></div>
+        <div class="spec-cell"><small>DIMENSIONS (W X H X D)</small><b>220 &times; 165 &times; 62 mm</b><span>Total enclosure displacement 2.2L</span></div>
+        <div class="spec-cell"><small>MATERIAL COMPOUND</small><b>Flame Retardant ABS-PC</b><span>Matte bead-blasted anti-static texture</span></div>
+        <div class="spec-cell"><small>COOLING MECHANICS</small><b>Convective Chimney</b><span>0 moving fans, pure silent passive dissipation</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FLEET ================= -->
+<section class="band light fleet-band" id="fleet">
+  <div class="container">
+    <div class="fleet">
+      <div class="fleet-copy">
+        <span class="eyebrow"><svg class="ic"><use href="#i-building"/></svg>ENTERPRISE &amp; RESIDENTIAL DEVELOPERS</span>
+        <h2>Architectural &amp; Fleet Procurement</h2>
+        <p>Integrating HASS across multiple residential developments or light commercial properties? Our systems engineering group offers direct volume pricing, custom laser-etched front panels, pre-flashed IP addressing, and dedicated tier-3 field engineering support.</p>
+        <ul class="fleet-points">
+          <li><svg class="ic"><use href="#i-check-circle"/></svg>Bulk MOQs from 25 Units</li>
+          <li><svg class="ic"><use href="#i-check-circle"/></svg>Custom Hardware Branding</li>
+          <li><svg class="ic"><use href="#i-check-circle"/></svg>Net-30 Commercial Terms</li>
+        </ul>
+      </div>
+      <form class="fleet-form" id="fleet-form">
+        <h3>Request Fleet Specification Pack</h3>
+        <p>Speak directly with a HASS systems architect. Responses within 4 business hours.</p>
+        <label for="fleet-email">WORK EMAIL</label>
+        <input id="fleet-email" type="email" placeholder="engineering@firm.com" required>
+        <div class="two">
+          <div><label for="fleet-units">ESTIMATED UNITS</label>
+            <select id="fleet-units"><option>25 - 50 Units</option><option>51 - 100 Units</option><option>101 - 500 Units</option><option>500+ Units</option></select></div>
+          <div><label for="fleet-role">PROJECT ROLE</label>
+            <select id="fleet-role"><option>Architect</option><option>Electrical Engineer</option><option>Developer / Owner</option><option>Procurement</option></select></div>
+        </div>
+        <button class="rfp-btn" type="submit">Submit Fleet RFP Inquiry <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+        <p class="form-note" id="fleet-note" hidden>Thanks, our systems architects will reply within 4 business hours.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="../index.html">
+        <div class="img-slot logo-image" data-label="LOGO">
+          <img src="../common/img/HASS-project-LOGO.png" alt="HASS-project-LOGO">
+        </div>
+        <span>HASS Core</span>
+      </a>
+      <p>Precision-engineered physical computing, local-first automation, and tactile environmental telemetry for architectural spaces.</p>
+      <span class="pill ok">Operational: Mesh Node Alpha 01</span>
+    </div>
+    <div><h4>System</h4><ul><li><a href="../shop/shop.html#product">Controller</a></li><li><a href="../shop/shop.html#inside-box">Relays &amp; Actuators</a></li><li><a href="../shop/shop.html#inside-box">Sensors &amp; Environmental</a></li><li><a href="../app/app.html">HASS OS App</a></li></ul></div>
+    <div><h4>Resources</h4><ul><li><a href="../documentation/documentation.html">Documentation</a></li><li><a href="../documentation/documentation.html#chapter-6-software-design-and-implementation">Firmware Binaries</a></li><li><a href="../documentation/documentation.html#cloud-database-and-data-model">REST &amp; WebSocket API</a></li><li><a href="../documentation/documentation.html#pin-assignment-and-wiring">Hardware Schematics</a></li></ul></div>
+    <div><h4>Company &amp; Legal</h4><ul><li><a href="../about/about.html#recognition">About RoboDam</a></li><li><a href="../about/about.html#privacy">Local-First Guarantee</a></li><li><a href="../documentation/documentation.html#chapter-7-security-and-authentication">Open Standards &amp; Privacy</a></li><li><a href="../contact/contact.html">Contact Engineering</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 HASS RoboDam Systems Inc. All physical rights reserved.</span><span class="mono"><a href="../about/about.html#privacy">Privacy Spec</a> &nbsp; <a href="../about/about.html#privacy">Zero-Cloud Protocol</a> &nbsp; <a href="../documentation/documentation.html">Compliance EN 50491</a></span></div>
+</div></footer>
+
+<!-- ================= INVOICE MODAL ================= -->
+<div class="inv-overlay" id="invoice-modal" role="dialog" aria-modal="true" aria-labelledby="inv-title" aria-hidden="true">
+  <div class="inv-card">
+    <div class="inv-head">
+      <div class="inv-brand">
+        <div class="img-slot logo-image" data-label="LOGO"><img src="../common/img/HASS-project-LOGO.png" alt="HASS-project-LOGO"></div>
+        <h2 id="inv-title">HASS Invoice</h2>
+      </div>
+      <button class="inv-x" type="button" id="inv-close-x" aria-label="Close invoice">&times;</button>
+    </div>
+    <div class="inv-body">
+      <div class="inv-meta">
+        <div><span>DATE</span><b id="inv-date"></b></div>
+        <div><span>TOTAL DEVICES</span><b id="inv-devices"></b></div>
+      </div>
+      <table class="inv-table">
+        <thead><tr><th>Item</th><th class="c">Quantity</th></tr></thead>
+        <tbody>
+          <tr><td>10A Relay Module</td><td class="c" id="inv-10">0</td></tr>
+          <tr><td>30A Relay Module</td><td class="c" id="inv-30">0</td></tr>
+        </tbody>
+        <tfoot><tr><td class="total-label">Total Amount</td><td class="c total-value" id="inv-total">0 EGP</td></tr></tfoot>
+      </table>
+      <div class="inv-contact">
+        <p>For inquiries and ordering, please contact us on WhatsApp:</p>
+        <a class="inv-wa" id="inv-wa" href="https://wa.me/201023065186" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          01023065186
+        </a>
+      </div>
+    </div>
+    <div class="inv-foot">
+      <button class="inv-btn ghost" type="button" id="inv-close">Close</button>
+      <button class="inv-btn" type="button" id="inv-print">Print Invoice</button>
+    </div>
+  </div>
+</div>
+
+<script src="../common/common.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>

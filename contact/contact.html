@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | HASS Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../common/common.css">
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<header class="site-header"><div class="container">
+  <a class="brand" href="../index.html">
+    <div class="img-slot logo-image" data-label="LOGO">
+      <img src="../common/img/HASS-project-LOGO.png" alt="HASS-project-LOGO">
+    </div>
+    <span>HASS<small>SMART HOME IOT</small></span>
+  </a>
+  <nav class="main-nav" id="nav"><a href="../index.html">Home</a><a href="../about/about.html">About</a><a href="../app/app.html">App</a><a href="../faq/faq.html">FAQ</a><a href="../contact/contact.html" class="active">Contact</a><a href="../shop/shop.html">Shop</a><a href="../documentation/documentation.html">Documentation</a></nav>
+  <div class="header-actions">
+    <span class="pill ok">Local Network: Connected</span>
+    <a class="btn accent btn-sm" href="../shop/shop.html">Shop</a>
+    <a class="avatar-btn" href="../contact/contact.html" aria-label="Account">&#9786;</a>
+  </div>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false">&#9776;</button>
+</div></header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero container">
+    <div class="hero-text">
+      <p class="kicker"><i class="dot"></i>DIRECT CHANNEL // HARDWARE LABS <em>/</em> <span>LATENCY: 0.4MS</span></p>
+      <h1>Contact HASS Engineering</h1>
+      <p class="hero-sub">Direct inquiries for commercial batch orders, architectural integrations, and technical partnerships.</p>
+    </div>
+    <span class="ref">REF: CN-2025-DISPATCH</span>
+  </section>
+
+  <div class="container mascot-row mascot-row--tight">
+    <aside class="mascot-guide" aria-label="Tip from HASS Bot">
+      <img class="mascot-guide__img" src="../common/img/mascot/hass-bot-coffee.png" alt="HASS Bot with a coffee mug" width="150" height="150">
+      <div class="mascot-guide__bubble">
+        <span class="mascot-guide__tag">HASS BOT</span>
+        <p>Grab a coffee and tell us about your project. Fill in the form below and the engineering team will get back to you.</p>
+        <a class="mascot-guide__link" href="../documentation/documentation.html">Read the documentation first <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ============ FORM + SIDEBAR ============ -->
+  <section class="contact-grid container">
+    <form class="form-card" id="contact-form" novalidate>
+      <p class="label-top">// CLASSIFICATION MATRIX</p>
+      <div class="tabs" role="tablist" id="topic-tabs">
+        <button type="button" role="tab" class="tab active" data-topic="Commercial / Batch" aria-selected="true">Commercial / Batch</button>
+        <button type="button" role="tab" class="tab" data-topic="Technical Support" aria-selected="false">Technical Support</button>
+        <button type="button" role="tab" class="tab" data-topic="Architectural System" aria-selected="false">Architectural System</button>
+        <button type="button" role="tab" class="tab" data-topic="Media &amp; Press" aria-selected="false">Media &amp; Press</button>
+      </div>
+
+      <div class="row two">
+        <div class="field"><label for="f-name">FULL NAME <b>*</b></label><input id="f-name" type="text" placeholder="Elena Rostova" required></div>
+        <div class="field"><label for="f-email">WORK EMAIL <b>*</b></label><input id="f-email" type="email" placeholder="rostova@atelier-arch.ch" required></div>
+      </div>
+      <div class="row two">
+        <div class="field"><label for="f-org">ORGANIZATION / STUDIO</label><input id="f-org" type="text" placeholder="Zurich Structural Guild"></div>
+        <div class="field"><label for="f-scope">HARDWARE SPEC SCOPE</label>
+          <select id="f-scope">
+            <option>Hardware Batch Evaluation (50+ units)</option>
+            <option>Single Unit Evaluation</option>
+            <option>Custom Enclosure / Branding</option>
+            <option>Firmware &amp; API Integration</option>
+          </select></div>
+      </div>
+      <div class="field">
+        <div class="label-row"><label for="f-details">PROJECT DETAILS / SPECIFICATIONS <b>*</b></label><span class="enc">TEXT / UTF-8</span></div>
+        <textarea id="f-details" placeholder="Detail unit volumes, enclosure constraints, deployment site specifics, or target protocol specifications..." required></textarea>
+      </div>
+      <div class="field">
+        <label>SCHEMATIC / SPEC ATTACHMENT</label>
+        <label class="dropzone" for="f-file" id="dropzone">
+          <span class="drop-icon"><svg class="ic"><use href="#i-upload"/></svg></span>
+          <b id="drop-title">Drag schematics or click to browse</b>
+          <small>PDF, DWG, DXF, or ZIP (Max 45MB)</small>
+          <input id="f-file" type="file" accept=".pdf,.dwg,.dxf,.zip" hidden>
+        </label>
+      </div>
+      <div class="submit-row">
+        <button class="transmit" type="submit">Transmit Dispatch <i class="sq"></i></button>
+        <span class="sla"><svg class="ic"><use href="#i-check-circle"/></svg>24h Core Engineering SLA Guaranteed</span>
+      </div>
+      <p class="sent" id="sent" hidden></p>
+      <div class="queue-note">
+        <svg class="ic"><use href="#i-terminal"/></svg>
+        <p>Every submission registers directly in the internal engineering triage queue. Unencrypted telemetries are held in ephemeral memory nodes and pruned after ticket close.</p>
+      </div>
+    </form>
+
+    <aside class="side">
+      <article class="node-card">
+        <div class="node-top"><span class="label-top">// DISPATCH NODE</span><span class="node-chip"><i class="dot"></i>NODE 01 ACTIVE</span></div>
+        <h3>Alexandria &amp; Cairo Corridor</h3>
+        <p class="addr">Smart Village Technology Park, Building B-14, Giza Governorate / Mediterranean Hardware Lab Hub.</p>
+        <div class="map-wrap">
+          <div class="img-slot contact-map-image" data-label="Location map">
+            <iframe class="contact-map-frame" title="Future Academy Hists location map" src="https://www.google.com/maps?q=Future+Academy+Hists&amp;ll=30.172803,31.536138&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
+            <a class="map-open" href="https://www.google.com/maps/search/?api=1&amp;query=Future+Academy+Hists+Obour" target="_blank" rel="noopener" aria-label="Open Future Academy Hists in Google Maps"></a>
+          </div>
+          <span class="coord">COORD: 30.1728&deg; N, 31.5361&deg; E</span>
+        </div>
+        <div class="two tiles">
+          <div class="tile"><small>PHYSICAL LAB HOURS</small><b>08:00 - 18:00 EET</b></div>
+          <div class="tile"><small>ASSEMBLY LINE</small><b>ISO-9001 VERIFIED</b></div>
+        </div>
+      </article>
+
+      <article class="chan-card">
+        <p class="label-top">// DIRECT COMMUNICATION CHANNELS</p>
+        <a class="chan" href="mailto:hardware@hass-systems.io">
+          <span class="chan-icon"><svg class="ic"><use href="#i-chip"/></svg></span>
+          <span class="chan-text"><b>Hardware Engineering Desk</b><small>hardware@hass-systems.io</small></span>
+          <svg class="ic arrow"><use href="#i-arrow-right"/></svg>
+        </a>
+        <a class="chan" href="https://github.com/hass-systems" target="_blank" rel="noopener">
+          <span class="chan-icon"><svg class="ic"><use href="#i-code"/></svg></span>
+          <span class="chan-text"><b>Developer Relations &amp; SDK</b><small>github.com/hass-systems</small></span>
+          <svg class="ic arrow"><use href="#i-arrow-right"/></svg>
+        </a>
+        <a class="chan" href="../documentation/documentation.html#chapter-5-hardware-design">
+          <span class="chan-icon"><svg class="ic"><use href="#i-radio-box"/></svg></span>
+          <span class="chan-text"><b>Mesh Protocol Frequency</b><small>868 MHz / 915 MHz LoRaWAN</small></span>
+          <i class="dot-o"></i>
+        </a>
+      </article>
+
+      <article class="pgp-card">
+        <div class="pgp-top"><span class="label-top">// ASYMMETRIC ENCRYPTION</span><svg class="ic"><use href="#i-lock-dot"/></svg></div>
+        <p>For sensitive blueprints, NDA disclosures, or proprietary schematics, encrypt payloads using our hardware master key.</p>
+        <div class="pgp-box">
+          <div><small>PGP FINGERPRINT</small><b id="pgp-fp">8F2A 01C4 BE89 90DF</b></div>
+          <button class="copy-key" type="button" id="copy-key"><svg class="ic"><use href="#i-copy"/></svg><span>Copy Key</span></button>
+        </div>
+      </article>
+
+      <a class="reliability" href="../about/about.html#privacy">
+        <div><small>TELEMETRY RELIABILITY</small><b>99.992%</b><span>Zero Cloud Cloud-Burst Dependency</span></div>
+        <span class="rel-icon"><svg class="ic"><use href="#i-network"/></svg></span>
+      </a>
+    </aside>
+  </section>
+
+  <!-- ============ PILLARS ============ -->
+  <section class="pillars container">
+    <a class="pillar" href="../about/about.html#privacy"><small>01 / ARCHITECTURE</small><h3>Offline Permanent Logic</h3><p>Devices operate entirely air-gapped with zero remote<br>dependency. Internal SQLite telemetry remains strictly within local enclosures.</p></a>
+    <a class="pillar" href="../shop/shop.html#specs"><small>02 / INTEGRATION</small><h3>Precision Tooling</h3><p>Standardized 35mm DIN-rail modules machined to CNC aerospace aluminum housings, tailored for industrial automation panels.</p></a>
+    <a class="pillar" href="../shop/shop.html#fleet"><small>03 / PROCUREMENT</small><h3>Scale-Up Guarantee</h3><p>Guaranteed component lifecycle availability of 10+ years across all HASS-ONE processing platforms and analog sensory units.</p></a>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="../index.html">
+        <div class="img-slot logo-image" data-label="LOGO">
+          <img src="../common/img/HASS-project-LOGO.png" alt="HASS-project-LOGO">
+        </div>
+        <span>HASS Core</span>
+      </a>
+      <p>Precision-engineered physical computing, local-first automation, and tactile environmental telemetry for architectural spaces.</p>
+      <span class="pill ok">Operational: Mesh Node Alpha 01</span>
+    </div>
+    <div><h4>System</h4><ul><li><a href="../shop/shop.html#product">Controller</a></li><li><a href="../shop/shop.html#inside-box">Relays &amp; Actuators</a></li><li><a href="../shop/shop.html#inside-box">Sensors &amp; Environmental</a></li><li><a href="../app/app.html">HASS OS App</a></li></ul></div>
+    <div><h4>Resources</h4><ul><li><a href="../documentation/documentation.html">Documentation</a></li><li><a href="../documentation/documentation.html#chapter-6-software-design-and-implementation">Firmware Binaries</a></li><li><a href="../documentation/documentation.html#cloud-database-and-data-model">REST &amp; WebSocket API</a></li><li><a href="../documentation/documentation.html#pin-assignment-and-wiring">Hardware Schematics</a></li></ul></div>
+    <div><h4>Company &amp; Legal</h4><ul><li><a href="../about/about.html#recognition">About RoboDam</a></li><li><a href="../about/about.html#privacy">Local-First Guarantee</a></li><li><a href="../documentation/documentation.html#chapter-7-security-and-authentication">Open Standards &amp; Privacy</a></li><li><a href="../contact/contact.html">Contact Engineering</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 HASS RoboDam Systems Inc. All physical rights reserved.</span><span class="mono"><a href="../about/about.html#privacy">Privacy Spec</a> &nbsp; <a href="../about/about.html#privacy">Zero-Cloud Protocol</a> &nbsp; <a href="../documentation/documentation.html">Compliance EN 50491</a></span></div>
+</div></footer>
+
+<script src="../common/common.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>
